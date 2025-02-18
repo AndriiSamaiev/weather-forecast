@@ -114,8 +114,10 @@ const searchWeather = async () => {
   } catch (error) {
     if (error instanceof TypeError) {
       errorMessage.value = 'Network error. Please check your connection and try again.';
+    } else if (error.statusCode === 404) {
+      errorMessage.value = error.statusMessage;
     } else {
-      errorMessage.value = error.message;
+      errorMessage.value = error.statusMessage;
     }
     weather.value = null;
   }

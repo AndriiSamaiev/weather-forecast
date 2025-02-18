@@ -12,6 +12,6 @@ export default defineEventHandler(async (event) => {
             `${URI_API}/current.json?key=${WEATHER_API_KEY}&q=${query}&aqi=no`
         );
     } catch (error) {
-        return createError({ statusCode: 500, statusMessage: "Failed to fetch weather data" });
+        return createError({ statusCode: 404, statusMessage: "City not found. Please enter a valid city name." });
     }
 });
