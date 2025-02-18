@@ -24,7 +24,7 @@
             Search
           </button>
           <div v-if="allCities.length && showAutoComplete"
-               class="absolute mt-10 mr-14 bg-white w-64 border rounded-r shadow-md">
+               class="absolute mt-10 mr-14 bg-white w-64 border rounded-r shadow-md z-10">
             <p class="bg-sky-400 p-2 ">Please select a city to proceed</p>
             <p
                 v-for="city in allCities"
