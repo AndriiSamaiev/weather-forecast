@@ -1,12 +1,44 @@
-# Nuxt Minimal Starter
+# 🌦 Nuxt 3 Weather App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
 
-## Setup
+Nuxt 3 application that fetches and displays weather data based on user input. The app uses a Nuxt server API route to proxy requests to an external weather API:
 
-Make sure to install dependencies:
+## Features
+
+Users can enter a city name to get real-time weather data.
+
+Displays key weather information:
+
+🌍 City Name
+
+🌡 Temperature (°C)
+
+☁️ Weather Condition (e.g., "Cloudy")
+
+🖼 Weather Icon
+
+Autocomplete suggestions for city names.
+
+Handles errors and displays appropriate messages.
+
+## 🛠 Tech Stack
+
+Nuxt 3 (Vue 3 framework)
+
+Tailwind CSS for styling
+
+Nuxt server API for handling external API requests
+
+
+## Configuration
+
+Clone the repository and install dependencies
+Copy the Environment Variables File: Make a copy of the .env.example file and rename it to .env. This file contains the necessary environment variables for the application to run correctly.
 
 ```bash
+cp .env.example .env
+
 # npm
 npm install
 
